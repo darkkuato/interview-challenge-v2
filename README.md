@@ -11,6 +11,10 @@ Stack técnico:
 > El uso de Bun es solo para simplificar la instalación.
 > No se evalúa conocimiento específico de Bun.
 
+## Iniciando
+
+Debe hacer un fork de este proyecto y subir sus modificaciones en su espacio de trabajo.
+
 ## Instalación
 
 ```bash
