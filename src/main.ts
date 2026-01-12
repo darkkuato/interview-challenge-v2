@@ -1,0 +1,18 @@
+import { enableProdMode, isDevMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+import { worker } from './mocks/browser';
+
+const initApp = async () => {
+  if (isDevMode()) {
+    await worker.start();
+  }
+  return platformBrowserDynamic().bootstrapModule(AppModule);
+};
+
+if (environment.production) {
+  enableProdMode();
+}
+
+initApp().catch((err) => console.error(err));

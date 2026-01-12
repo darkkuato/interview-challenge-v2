@@ -1,0 +1,21 @@
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 1;
+}
+
+.modal-aside {
+  background-color: var(--white);
+  padding-top: 25px;
+  height: 100%;
+  width: 350px;
+  max-width: 100dvw;
+}

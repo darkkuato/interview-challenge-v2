@@ -1,0 +1,9 @@
+<ng-container *ngIf="control">
+  <input
+    [type]="type"
+    [formControl]="control"
+    [class.invalid-input]="control.touched && control.errors"
+    [placeholder]="placeholder"
+    autocomplete="off"
+  />
+</ng-container>

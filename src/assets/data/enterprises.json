@@ -1,0 +1,24 @@
+{
+  "enterprises": [
+    {
+      "id": 1,
+      "cuit": "30714919829",
+      "razonSocial": "CAMPOS DEL NORTE SRL"
+    },
+    {
+      "id": 2,
+      "cuit": "30714917532",
+      "razonSocial": "TIENDA AGRO LOBERIA INT S.A."
+    },
+    {
+      "id": 3,
+      "cuit": "30714916188",
+      "razonSocial": "FRE-SUAR S.A."
+    },
+    {
+      "id": 4,
+      "cuit": "30714909696",
+      "razonSocial": "ENECE S.A."
+    }
+  ]
+}

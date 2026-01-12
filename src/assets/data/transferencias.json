@@ -1,0 +1,201 @@
+{
+  "transferencias": {
+    "30714919829": [
+      {
+        "nroTransaccion": "00002",
+        "destinatario": "TIENDA AGRO LOBERIA INT S.A.",
+        "importe": 2000.51,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00003",
+        "destinatario": "FRE-SUAR S.A.",
+        "importe": 500,
+        "referencia": "Compra",
+        "estado": "RE"
+      },
+      {
+        "nroTransaccion": "00005",
+        "destinatario": "NAMUNCURA S.R.L.",
+        "importe": 750,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00006",
+        "destinatario": "AGROGLOBAL MENDOZA SA",
+        "importe": 1250.05,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      },
+      {
+        "nroTransaccion": "00007",
+        "destinatario": "HERMANOS FUJII S.R.L",
+        "importe": 1500,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00008",
+        "destinatario": "CAMPOS DEL NORTE SRL",
+        "importe": 1850,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      }
+    ],
+    "30714917532": [
+      {
+        "nroTransaccion": "00001",
+        "destinatario": "CAMPOS DEL NORTE SRL",
+        "importe": 1000,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      },
+      {
+        "nroTransaccion": "00003",
+        "destinatario": "FRE-SUAR S.A.",
+        "importe": 500,
+        "referencia": "Compra",
+        "estado": "RE"
+      },
+      {
+        "nroTransaccion": "00004",
+        "destinatario": "ENECE S.A.",
+        "importe": 600,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00005",
+        "destinatario": "NAMUNCURA S.R.L.",
+        "importe": 750,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00006",
+        "destinatario": "AGROGLOBAL MENDOZA SA",
+        "importe": 1250.05,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      },
+      {
+        "nroTransaccion": "00007",
+        "destinatario": "HERMANOS FUJII S.R.L",
+        "importe": 1500,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00008",
+        "destinatario": "CAMPOS DEL NORTE SRL",
+        "importe": 1850,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      }
+    ],
+    "30714916188": [
+      {
+        "nroTransaccion": "00001",
+        "destinatario": "CAMPOS DEL NORTE SRL",
+        "importe": 1000,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      },
+      {
+        "nroTransaccion": "00002",
+        "destinatario": "TIENDA AGRO LOBERIA INT S.A.",
+        "importe": 2000.51,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00004",
+        "destinatario": "ENECE S.A.",
+        "importe": 600,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00005",
+        "destinatario": "NAMUNCURA S.R.L.",
+        "importe": 750,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00006",
+        "destinatario": "AGROGLOBAL MENDOZA SA",
+        "importe": 1250.05,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      },
+      {
+        "nroTransaccion": "00007",
+        "destinatario": "HERMANOS FUJII S.R.L",
+        "importe": 1500,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00008",
+        "destinatario": "CAMPOS DEL NORTE SRL",
+        "importe": 1850,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      }
+    ],
+    "30714909696": [
+      {
+        "nroTransaccion": "00001",
+        "destinatario": "CAMPOS DEL NORTE SRL",
+        "importe": 1000,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      },
+      {
+        "nroTransaccion": "00002",
+        "destinatario": "TIENDA AGRO LOBERIA INT S.A.",
+        "importe": 2000.51,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00003",
+        "destinatario": "FRE-SUAR S.A.",
+        "importe": 500,
+        "referencia": "Compra",
+        "estado": "RE"
+      },
+      {
+        "nroTransaccion": "00005",
+        "destinatario": "NAMUNCURA S.R.L.",
+        "importe": 750,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00006",
+        "destinatario": "AGROGLOBAL MENDOZA SA",
+        "importe": 1250.05,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      },
+      {
+        "nroTransaccion": "00007",
+        "destinatario": "HERMANOS FUJII S.R.L",
+        "importe": 1500,
+        "referencia": "Compra",
+        "estado": "AP"
+      },
+      {
+        "nroTransaccion": "00008",
+        "destinatario": "CAMPOS DEL NORTE SRL",
+        "importe": 1850,
+        "referencia": "Alquiler",
+        "estado": "PE"
+      }
+    ]
+  }
+}

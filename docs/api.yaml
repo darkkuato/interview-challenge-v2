@@ -1,0 +1,135 @@
+openapi: 3.0.0
+info:
+  title: API Banca Argentina
+  version: 1.0.0
+  description: Endpoints Banca Argentina
+
+servers:
+  - url: http://localhost:8080
+    description: Servidor local de desarrollo
+
+tags:
+  - name: Autenticación
+    description: Endpoints relacionados con la autenticación de usuarios.
+  - name: Empresas
+    description: Endpoints relacionados con la gestión de empresas.
+  - name: Transferencias
+    description: Endpoints relacionados con transferencias.
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+paths:
+  /api/auth/sign-in:
+    post:
+      tags:
+        - Autenticación
+      summary: Iniciar sesión
+      description: Permite a un usuario iniciar sesión en el sistema.
+      requestBody:
+        description: Credenciales necesarias para iniciar sesión.
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: usuario@example.com
+                password:
+                  type: string
+                  format: password
+                  example: MiContraseña123
+      responses:
+        "200":
+          description: Operación exitosa
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: f1ae9924-4f84-44bc-bc3a-3cfc9388e944
+
+  /api/enterprises:
+    get:
+      tags:
+        - Empresas
+      summary: Obtener lista de empresas
+      description: Retorna una lista de empresas disponibles.
+      security:
+        - BearerAuth: [] # Requiere autenticación con token
+      responses:
+        "200":
+          description: Operación exitosa
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  enterprises:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        cuil:
+                          type: string
+                          example: "30714919829"
+                        razonSocial:
+                          type: string
+                          example: "CAMPOS DEL NORTE SRL"
+
+  /api/transferencias:
+    get:
+      tags:
+        - Transferencias
+      summary: Consultar transferencias
+      description: Obtiene una lista de transferencias realizadas.
+      security:
+        - BearerAuth: []
+      parameters:
+        - in: header
+          name: CUIT
+          description: CUIT del cliente que realiza la consulta.
+          required: true
+          schema:
+            type: string
+            example: "30714919829"
+      responses:
+        "200":
+          description: Operación exitosa
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transferencias:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        nroTransaccion:
+                          type: string
+                          example: "0002"
+                        destinatario:
+                          type: string
+                          example: "TIENDA AGRO LOBERIA INT S.A."
+                        importe:
+                          type: number
+                          example: 100.52
+                        referencia:
+                          type: string
+                          example: "Compra"
+                        estado:
+                          type: string
+                          example: "AP"
