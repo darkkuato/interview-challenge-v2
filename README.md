@@ -52,7 +52,7 @@ bun start
 Este proyecto implementa una estructura de carpetas por tipos.
 Antes de comenzar, familiarizate con la estructura del proyecto.
 
-El proyecto implementa sgue la siguiente estructura:
+El proyecto sigue la siguiente estructura:
 
 ```text
 src/app
