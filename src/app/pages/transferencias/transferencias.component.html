@@ -1,0 +1,8 @@
+<app-main-layout>
+  <app-typography *ngIf="error" color="error">{{ error }}</app-typography>
+
+  <app-transferencias-table
+    *ngIf="!error"
+    [transferencias]="transferencias"
+  ></app-transferencias-table>
+</app-main-layout>

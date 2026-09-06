@@ -1,0 +1,16 @@
+<app-table-custom>
+  <tr table-header>
+    <th class="font-secondary">Transacción</th>
+    <th class="font-secondary">Destinatario</th>
+    <th class="font-secondary">Importe</th>
+    <th class="font-secondary">Referencia</th>
+    <th class="font-secondary">Estado</th>
+  </tr>
+  <tr table-body *ngFor="let transferencia of transferencias">
+    <td class="font-primary">{{ transferencia.nroTransaccion }}</td>
+    <td class="font-primary">{{ transferencia.destinatario }}</td>
+    <td class="font-primary">{{ transferencia.importe | number: '1.2-2' }}</td>
+    <td class="font-primary">{{ transferencia.referencia }}</td>
+    <td class="font-primary"><b>{{ tranfEstadoLabel[transferencia.estado] }}</b></td>
+  </tr>
+</app-table-custom>
