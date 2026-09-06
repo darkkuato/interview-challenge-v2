@@ -1,0 +1,6 @@
+<app-enterprise-detail
+  *ngFor="let enterprise of enterprises"
+  [razonSocial]="enterprise.razonSocial"
+  [cuit]="enterprise.cuit"
+  (handlerCuit)="select.emit(enterprise)"
+></app-enterprise-detail>

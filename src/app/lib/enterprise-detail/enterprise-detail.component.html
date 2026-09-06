@@ -1,6 +1,4 @@
 <button type="button" (click)="handlerCuit.emit(cuit)">
-  <p class="text-razon-social font-secondary">{{ razonSocial }}</p>
-  <p class="text-cuit font-primary">
-    CUIT: <b>{{ cuit }}</b>
-  </p>
+  <app-typography family="secondary" size="lg">{{ razonSocial }}</app-typography>
+  <app-typography size="sm">CUIT: <b>{{ cuit }}</b></app-typography>
 </button>
