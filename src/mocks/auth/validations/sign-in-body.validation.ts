@@ -12,19 +12,20 @@ export class SignInBodyValidation {
 
     if (!this.email) {
       errors.push('El correo es obligatorio');
-    }
-    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(this.email)) {
+    } else if (
+      !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(this.email)
+    ) {
       errors.push('Correo inválido');
     }
+
     if (!this.password) {
       errors.push('La contraseña es obligatoria');
-    }
-    if (this.password.length < 8) {
+    } else if (this.password.length < 8) {
       errors.push('La contraseña debe tener al menos 8 carácteres');
-    }
-    if (this.password.length > 16) {
+    } else if (this.password.length > 16) {
       errors.push('La contraseña debe tener menos de 16 carácteres');
     }
+
     return errors;
   }
 }
