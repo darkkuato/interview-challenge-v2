@@ -82,7 +82,7 @@ paths:
                         id:
                           type: integer
                           example: 1
-                        cuil:
+                        cuit:
                           type: string
                           example: "30714919829"
                         razonSocial:

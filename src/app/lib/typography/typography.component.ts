@@ -14,5 +14,6 @@ export class TypographyComponent {
     | 'primary'
     | 'primary-light'
     | 'white'
-    | 'black' = 'black';
+    | 'black'
+    | 'error' = 'black';
 }

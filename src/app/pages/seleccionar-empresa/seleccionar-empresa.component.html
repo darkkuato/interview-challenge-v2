@@ -1,0 +1,18 @@
+<app-modal-aside>
+  <app-typography
+    family="secondary"
+    size="xl"
+    weight="bold"
+    color="primary-dark"
+  >
+    Elegir empresa
+  </app-typography>
+  <app-typography size="base" color="primary">
+    Seleccioná la empresa con la que querés operar
+  </app-typography>
+
+  <app-enterprise-list
+    [enterprises]="enterprises"
+    (select)="onSelect($event)"
+  ></app-enterprise-list>
+</app-modal-aside>

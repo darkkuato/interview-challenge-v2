@@ -1,0 +1,30 @@
+.login-page {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.login-header {
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+app-button-primary {
+  display: flex;
+  justify-content: center;
+}
+
+.errors {
+  color: var(--error);
+  margin: 24px 0 0;
+  padding-left: 20px;
+}

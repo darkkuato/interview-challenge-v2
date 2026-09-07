@@ -2,8 +2,9 @@
   <input
     [type]="type"
     [formControl]="control"
-    [class.invalid-input]="control.touched && control.errors"
+    [class.invalid-input]="showError"
     [placeholder]="placeholder"
     autocomplete="off"
   />
+  <span class="error-message font-primary" *ngIf="showError">{{ errorMessage }}</span>
 </ng-container>

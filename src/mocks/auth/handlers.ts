@@ -9,7 +9,7 @@ export const handlers = [
     if (!req) {
       return HttpResponse.json(
         { errors: ['No se envio un body válido'] },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -20,7 +20,7 @@ export const handlers = [
 
     const errors = new SignInBodyValidation(
       body.email,
-      body.password
+      body.password,
     ).validate();
 
     if (errors.length > 0) {
@@ -30,7 +30,7 @@ export const handlers = [
     if (body.email === 'error@correo.com' || body.password === '123456789') {
       return HttpResponse.json(
         { errors: ['El correo o la clave son incorrectos'] },
-        { status: 406 }
+        { status: 406 },
       );
     }
 
@@ -38,7 +38,7 @@ export const handlers = [
       {
         token: '1234567890',
       },
-      { status: 200 }
+      { status: 200 },
     );
   }),
 ];

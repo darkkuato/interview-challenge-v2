@@ -1,6 +1,7 @@
 input {
   background-color: transparent;
   border: none;
+  box-sizing: border-box;
   color: var(--black);
   outline: 2px solid #474747;
   padding: 8px 16px;
@@ -10,4 +11,14 @@ input {
     outline: 2px solid var(--primary);
     color: var(--primary);
   }
+  &.invalid-input {
+    outline: 2px solid var(--error);
+  }
+}
+
+.error-message {
+  color: var(--error);
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 4px;
 }
