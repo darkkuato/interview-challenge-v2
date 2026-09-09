@@ -1,0 +1,9 @@
+<div class="enterprise-list" role="list">
+  <app-enterprise-detail
+    *ngFor="let enterprise of enterprises; trackBy: trackById"
+    role="listitem"
+    [razonSocial]="enterprise.razonSocial"
+    [cuit]="enterprise.cuit"
+    (handlerCuit)="selectByCuit($event)"
+  ></app-enterprise-detail>
+</div>
