@@ -1,0 +1,70 @@
+<form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <div *ngIf="serverErrors.length" class="form-errors" role="alert">
+    <p *ngFor="let error of serverErrors">{{ error }}</p>
+  </div>
+
+  <div class="field">
+    <label for="email" class="font-secondary">Correo</label>
+    <app-input-outline
+      id="email"
+      type="email"
+      autocomplete="email"
+      placeholder="nombre@correo.com"
+      ariaLabel="Correo"
+      [maxLength]="155"
+      [control]="emailControl"
+    ></app-input-outline>
+    <p
+      *ngIf="emailControl.touched && emailControl.hasError('required')"
+      class="field-error"
+    >
+      El correo es obligatorio.
+    </p>
+    <p
+      *ngIf="emailControl.touched && emailControl.hasError('email')"
+      class="field-error"
+    >
+      Ingresá un correo electrónico válido.
+    </p>
+    <p
+      *ngIf="emailControl.touched && emailControl.hasError('maxlength')"
+      class="field-error"
+    >
+      El correo no puede superar los 155 caracteres.
+    </p>
+  </div>
+
+  <div class="field">
+    <label for="password" class="font-secondary">Clave</label>
+    <app-input-outline
+      id="password"
+      type="password"
+      autocomplete="current-password"
+      placeholder="Ingresá tu clave"
+      ariaLabel="Clave"
+      [maxLength]="16"
+      [control]="passwordControl"
+    ></app-input-outline>
+    <p
+      *ngIf="passwordControl.touched && passwordControl.hasError('required')"
+      class="field-error"
+    >
+      La clave es obligatoria.
+    </p>
+    <p
+      *ngIf="
+        passwordControl.touched &&
+        (passwordControl.hasError('minlength') ||
+          passwordControl.hasError('maxlength')) &&
+        !passwordControl.hasError('required')
+      "
+      class="field-error"
+    >
+      La clave debe tener entre 8 y 16 caracteres.
+    </p>
+  </div>
+
+  <app-button-primary type="submit" [disabled]="submitting">
+    {{ submitting ? 'Ingresando…' : 'Ingresar' }}
+  </app-button-primary>
+</form>
