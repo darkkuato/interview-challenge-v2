@@ -1,0 +1,25 @@
+<app-banking-layout variant="empty">
+  <section class="welcome-copy" aria-hidden="true">
+    <p class="font-secondary">Operá de manera simple y segura</p>
+  </section>
+
+  <app-modal-aside [showModal]="true" ariaLabel="Selección de empresa">
+    <div class="aside-content">
+      <p class="eyebrow font-secondary">Paso 1 de 2</p>
+      <h1 class="font-primary">Elegir empresa</h1>
+      <app-typography family="secondary" color="primary-dark">
+        Seleccioná la empresa con la que querés operar.
+      </app-typography>
+
+      <p *ngIf="loading" class="loading font-secondary" role="status">
+        Cargando empresas…
+      </p>
+
+      <app-enterprise-list
+        *ngIf="!loading"
+        [enterprises]="enterprises"
+        (enterpriseSelected)="selectEnterprise($event)"
+      ></app-enterprise-list>
+    </div>
+  </app-modal-aside>
+</app-banking-layout>
