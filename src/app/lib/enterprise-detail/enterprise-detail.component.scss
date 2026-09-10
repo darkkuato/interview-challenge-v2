@@ -9,14 +9,27 @@ button {
   gap: 8px;
   padding: 6px;
   width: 100%;
+  text-align: left;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+  &:hover,
+  &:focus-visible {
+    background: #f2f7f9;
+    transform: translateX(3px);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 2px;
+  }
 }
 
 .text-razon-social {
   font-size: 18px;
   width: 100%;
+  margin: 0;
 }
 
 .text-cuit {
   font-size: 14px;
   width: 100%;
+  margin: 0;
 }
