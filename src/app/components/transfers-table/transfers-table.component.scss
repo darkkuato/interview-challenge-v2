@@ -1,0 +1,22 @@
+.status {
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 10px;
+}
+
+.status--ap {
+  background: #e7f6ec;
+  color: #176b36;
+}
+
+.status--re {
+  background: #fdecec;
+  color: #a11c1c;
+}
+
+.status--pe {
+  background: #fff3d6;
+  color: #8a5b00;
+}

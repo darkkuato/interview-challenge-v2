@@ -1,0 +1,25 @@
+<app-table-custom>
+  <tr table-header>
+    <th scope="col">Transacción</th>
+    <th scope="col">Destinatario</th>
+    <th scope="col">Importe</th>
+    <th scope="col">Referencia</th>
+    <th scope="col">Estado</th>
+  </tr>
+
+  <ng-container table-body>
+    <tr *ngFor="let transfer of transfers; trackBy: trackByTransaction">
+      <td>{{ transfer.nroTransaccion }}</td>
+      <td>{{ transfer.destinatario }}</td>
+      <td>
+        {{ transfer.importe | currency : 'ARS' : 'symbol-narrow' : '1.2-2' }}
+      </td>
+      <td>{{ transfer.referencia }}</td>
+      <td>
+        <span class="status" [ngClass]="statusClass(transfer.estado)">
+          {{ statusLabel(transfer.estado) }}
+        </span>
+      </td>
+    </tr>
+  </ng-container>
+</app-table-custom>
