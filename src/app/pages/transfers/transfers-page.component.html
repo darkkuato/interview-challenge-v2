@@ -1,0 +1,33 @@
+<app-banking-layout variant="wide">
+  <section aria-labelledby="transfers-title">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow font-secondary">Últimos movimientos</p>
+        <h1 id="transfers-title" class="font-primary">Transferencias</h1>
+        <p *ngIf="enterprise" class="enterprise font-secondary">
+          {{ enterprise.razonSocial }} · CUIT {{ enterprise.cuit }}
+        </p>
+      </div>
+
+      <button type="button" class="change-button" (click)="changeEnterprise()">
+        Cambiar empresa
+      </button>
+    </header>
+
+    <p *ngIf="loading" class="feedback font-secondary" role="status">
+      Cargando transferencias…
+    </p>
+
+    <div *ngIf="errorMessage" class="error-card" role="alert">
+      <p class="font-secondary">{{ errorMessage }}</p>
+      <app-button-primary type="button" (onClick)="loadTransfers()">
+        Reintentar
+      </app-button-primary>
+    </div>
+
+    <app-transfers-table
+      *ngIf="!loading && !errorMessage"
+      [transfers]="transfers"
+    ></app-transfers-table>
+  </section>
+</app-banking-layout>
