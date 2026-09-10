@@ -16,6 +16,8 @@
   background-color: var(--white);
   padding-top: 25px;
   height: 100%;
-  width: 350px;
+  box-shadow: -18px 0 50px rgba(0, 13, 20, 0.14);
+  overflow-y: auto;
+  width: 390px;
   max-width: 100dvw;
 }

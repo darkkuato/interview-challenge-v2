@@ -1,5 +1,5 @@
 <div *ngIf="showModal" class="modal-container">
-  <div class="modal-aside">
+  <aside class="modal-aside" role="dialog" [attr.aria-label]="ariaLabel">
     <ng-content></ng-content>
-  </div>
+  </aside>
 </div>
