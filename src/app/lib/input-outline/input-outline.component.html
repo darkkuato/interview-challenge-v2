@@ -1,9 +1,12 @@
 <ng-container *ngIf="control">
   <input
     [type]="type"
+    [id]="id"
     [formControl]="control"
     [class.invalid-input]="control.touched && control.errors"
     [placeholder]="placeholder"
-    autocomplete="off"
+    [attr.aria-label]="ariaLabel || placeholder"
+    [attr.autocomplete]="autocomplete"
+    [attr.maxlength]="maxLength"
   />
 </ng-container>

@@ -9,5 +9,9 @@ import { FormControl } from '@angular/forms';
 export class InputOutlineComponent {
   @Input() type: 'text' | 'email' | 'password' = 'text';
   @Input() placeholder: string = '';
+  @Input() id: string = '';
+  @Input() ariaLabel: string = '';
+  @Input() autocomplete: string = 'off';
+  @Input() maxLength?: number;
   @Input() control?: FormControl;
 }

@@ -5,9 +5,15 @@ input {
   outline: 2px solid #474747;
   padding: 8px 16px;
   border-radius: 8px;
+  box-sizing: border-box;
+  font: 500 15px "Mulish", sans-serif;
+  min-height: 44px;
   width: 100%;
   &:focus {
     outline: 2px solid var(--primary);
     color: var(--primary);
+  }
+  &.invalid-input {
+    outline-color: #b42318;
   }
 }
