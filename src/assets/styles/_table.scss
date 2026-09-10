@@ -1,15 +1,18 @@
 table {
-  background-color: #e4e4e4;
+  background-color: #dce5ea;
+  border-collapse: collapse;
+  min-width: 760px;
+  width: 100%;
 }
 
 tr th {
   background-color: var(--primary);
   color: var(--white);
   font-family: "Mulish", sans-serif;
-  padding: 4px 24px;
-  font-size: 18px;
+  padding: 15px 20px;
+  font-size: 14px;
   font-weight: 800;
-  border-radius: 4px;
+  text-align: left;
 }
 
 tr td {
@@ -18,5 +21,6 @@ tr td {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  padding: 4px 24px;
+  border-bottom: 1px solid #e5ecef;
+  padding: 16px 20px;
 }
