@@ -1,0 +1,38 @@
+.login-card {
+  background: var(--white);
+  border: 1px solid #e0e7eb;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 40, 61, 0.1);
+  max-width: 440px;
+  padding: 42px;
+  width: 100%;
+}
+
+.eyebrow {
+  color: var(--primary-light);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--primary-dark);
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+
+app-typography {
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 560px) {
+  .login-card {
+    border: 0;
+    box-shadow: none;
+    padding: 24px 4px;
+  }
+}

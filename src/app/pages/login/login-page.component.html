@@ -1,0 +1,15 @@
+<app-banking-layout variant="center">
+  <section class="login-card" aria-labelledby="login-title">
+    <p class="eyebrow font-secondary">Banca empresas</p>
+    <h1 id="login-title" class="font-primary">Banca Argentina</h1>
+    <app-typography family="secondary" color="primary-dark">
+      Ingrese sus datos para empezar a operar.
+    </app-typography>
+
+    <app-login-form
+      [serverErrors]="errors"
+      [submitting]="submitting"
+      (credentialsSubmitted)="signIn($event)"
+    ></app-login-form>
+  </section>
+</app-banking-layout>
